@@ -22,17 +22,20 @@ Dans le cas d'un argument qui n'est pas l'un des deux, je veux que le script ré
 
 */
 
-if ($argv[1] == "Coucou")
+$arg = empty($argv[1]) ? "" : $argv[1];
+$arg = strtoupper($arg);
+
+if ($arg == "COUCOU")
 {
-	echo "Salut bro' !";
+	echo "Salut bro' !\r\n";
 }
-elseif ($argv[1] == "Hello") 
+elseif ($arg == "HELLO") 
 {
-	echo "Whassup dude ?!";
+	echo "Whassup dude ?!\r\n";
 }
 else
 {
-	echo "Euh... ok... j'suis pressé, j'ai aqua poney, à la prochaine.";
+	echo "Euh... ok... j'suis pressé, j'ai aqua poney, à la prochaine.\r\n";
 }
 
 ?>
