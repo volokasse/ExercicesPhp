@@ -10,3 +10,7 @@ La page web sera la suivante : https://firestorm-servers.com/
 => voir @ https://www.php.net/manual/fr/function.file-get-contents.php et un simple echo pour afficher le résultat suffira :)
 
 */
+
+$firestorm = file_get_contents('https://firestorm-servers.com/');
+echo $firestorm;
+?>
