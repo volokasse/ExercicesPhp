@@ -62,7 +62,7 @@ echo '<br>';
 $bidule = "machin";
 $machin = "bidule";
 
-echo ''.$bidule.' '.$machin.'';
+echo $bidule.' '.$machin;
 echo '<br>';
 
 //Exo 3
@@ -71,25 +71,26 @@ $y = 6;
 $z = 2;
 
 $resultat = $x + ($y * $z);
-echo " $resultat ";
+echo $resultat;
 echo '<br>';
 
 //Exo 4
-for ($i=0; $i < 11 ; $i++) { 
+for ($i = 0 ; $i < 11 ; $i++) 
+{ 
 	echo "$i";
 }
 echo '<br>';
 
 //Exo 5
-$nombres = array ('0', '1', '2', '3','4','5','6','7','8','9','10');
+$nombres = [1,2,3,4,5,6,7,8,9,10];
 foreach ($nombres as $nombre) {
 	echo "$nombre";
 }
 echo '<br>';
 
 //Exo 6
-foreach (range(0,10,1) as $nombre_range) {
-	echo "$nombre_range";
+foreach (range(0,10) as $nombre_range) {
+	echo $nombre_range;
 }
 echo '<br>';
 

@@ -19,3 +19,20 @@ Dans le cas d'un argument qui n'est pas l'un des deux, je veux que le script ré
 
 => voir @ http://zetcode.com/lang/php/basics/
 => voir @ https://www.php.net/manual/fr/language.control-structures.php
+
+*/
+
+if ($argv[1] == "Coucou")
+{
+	echo "Salut bro' !";
+}
+elseif ($argv[1] == "Hello") 
+{
+	echo "Whassup dude ?!";
+}
+else
+{
+	echo "Euh... ok... j'suis pressé, j'ai aqua poney, à la prochaine.";
+}
+
+?>
